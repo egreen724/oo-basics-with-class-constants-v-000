@@ -6,8 +6,7 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS.each do |brand_list|
-      if @brand != brand_list
+    if BRANDS.include?(brand)
       BRANDS << brand
     end
   end 
