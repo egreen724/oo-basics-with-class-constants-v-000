@@ -6,7 +6,10 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand 
+    BRANDS.each do |brand_list|
+      if @brand != brand_list
+      BRANDS << brand
+    end
   end
 
   def cobble
